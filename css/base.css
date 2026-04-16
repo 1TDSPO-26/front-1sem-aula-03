@@ -6,6 +6,34 @@
     font-weight: normal;
 }
 
+/*
+Declarando variáveis no CSS:
+As variáveis no CSS são declaradas utilizando a sintaxe --nome-da-variavel: valor; e devem ser declaradas dentro do seletor :root para que possam ser acessíveis em todo o documento.
+Exemplo:"
+--cor-de-fundo: #ff0000;
+
+Utilizando a variável:
+Para utilizar a variável, basta chamar a função var() e passar o nome da variável como parâmetro:
+background-color: var(--cor-de-fundo);
+
+*/
+
+:root{
+    /* Cores de Fundo e Identidade */
+    --bg-dark:#1a1b1c;  /* Fundo quase preto */
+    --bg-dark-med:#4f5357;  /* Fundo quase preto */
+    --bg-panel:#242629; /* Fundo de base */
+    --primary:#556b2f; /* Verde Oliva */
+    --primary-hover:#6b8e23; /* Verde Oliva mais claro para o hover */
+
+    /* Cores de Texto */
+    --text-main:#e0e0e0; /* Branco acinzentado */
+    --text-muted:#a0a0a0; /* Textos menos importantes */
+    --text-inv:#ffffff; /* Branco puro para contraste no verde do hover */
+};
+
+}
+
 html{
     font-size: 62.5%;/*10px = 1rem*/
 }
